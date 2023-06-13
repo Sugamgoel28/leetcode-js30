@@ -39,7 +39,7 @@ Question 2: Write a function expect that helps developers test their code. It sh
 
 Solution:
 ```cpp
-     var expect = function(val) {
+    var expect = function(val) {
     function toBe(val2){
         if(val === val2){
              return true
@@ -58,6 +58,29 @@ Solution:
     }
     return {
         toBe, notToBe
+    }
+};
+```
+<hr>
+<h3> <u>Day 4: Counter 2 </u></h3>
+
+Question: Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
+
+The three functions are:
+
+<kbd>increment()</kbd> increases the current value by 1 and then returns it.<br>
+<kbd>decrement()</kbd> reduces the current value by 1 and then returns it.<br>
+<kbd>reset()</kbd> sets the current value to <kbd>init</kbd> and then returns it.<br>
+
+Solution:
+```cpp
+    var createCounter = function(init) {
+    let presentCount = init;
+
+    return{
+        increment: ()=> ++presentCount,
+        decrement: ()=> --presentCount,
+        reset: ()=> presentCount = init 
     }
 };
 ```
