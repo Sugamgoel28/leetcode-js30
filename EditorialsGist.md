@@ -17,7 +17,9 @@
     <br>Function syntax, Arrow Syntax, Arrow syntax + Rest arguments.</li>
   
 </ul>
-
+<table>
+  
+  </table>
 
 
 
